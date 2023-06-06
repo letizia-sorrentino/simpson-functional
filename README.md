@@ -1,1 +1,1 @@
-# simpson-functional
+simpsons-functional
