@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Loading from "./components/Loading";
@@ -111,12 +112,9 @@ const App = () => {
       <Controls onSearchInput={onSearchInput} onLikeInput={onLikeInput} />
 
       <Simpsons
-        //simpsons={filteredList.lenght ? filteredList : simpsons}
         simpsons={filteredList}
         onDelete={onDelete}
         onLikeToggle={onLikeToggle}
-        onSearchInput={onSearchInput}
-        onLikeInput={onLikeInput}
       />
     </>
   );

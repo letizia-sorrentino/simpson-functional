@@ -2,7 +2,7 @@ const Controls = (props) => {
   const { onSearchInput, onLikeInput } = props;
   return (
     <>
-      <input onInput={onSearchInput} type="text" />
+      <input className="controls" onInput={onSearchInput} type="text" />
       <select onInput={onLikeInput}>
         <option value=""></option>
         <option value="liked">Liked</option>

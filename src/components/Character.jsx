@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Name from "./Name";
 import Quote from "./Quote";
 import Image from "./Image";
