@@ -1,17 +1,10 @@
-//import React, { Component } from "react";
-import React from "react";
 import Character from "./Character";
-import Controls from "./Controls";
 
 const Simpsons = (props) => {
-  const { simpsons, onDelete, onLikeToggle, onSearchInput, onLikeInput } =
-    props;
+  const { simpsons, onDelete, onLikeToggle } = props;
 
   return (
-    <>
-      <Controls onSearchInput={onSearchInput} onLikeInput={onLikeInput} />
-
-      {simpsons.map((item, index) => {
+      simpsons.map((item) => {
         return (
           <Character
             item={item}
@@ -20,34 +13,8 @@ const Simpsons = (props) => {
             onLikeToggle={onLikeToggle}
           />
         );
-      })}
-    </>
+      })
   );
 };
 
 export default Simpsons;
-
-// class Simpsons extends Component {
-//   render() {
-//     const { simpsons, onDelete, onLikeToggle, onSearchInput, onLikeInput } = this.props;
-
-//     return (
-//       <>
-//       <Controls onSearchInput={onSearchInput} onLikeInput={onLikeInput}/>
-
-//         {simpsons.map((item, index) => {
-//           return (
-//             <Character
-//               item={item}
-//               key={item.id}
-//               onDelete={onDelete}
-//               onLikeToggle={onLikeToggle}
-//             />
-//           );
-//         })}
-//       </>
-//     );
-//   }
-// }
-
-// export default Simpsons;
