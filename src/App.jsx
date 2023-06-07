@@ -45,7 +45,7 @@ const App = () => {
 
     // invert if liked or not liked
     simpsonsCopy[indexOf].liked = !simpsonsCopy[indexOf].liked;
-    setSimpsons({ simpsonsCopy });
+    setSimpsons(simpsonsCopy);
   };
 
   //Function to wire up delete button
@@ -56,7 +56,7 @@ const App = () => {
     });
 
     simpsonsCopy.splice(indexOf, 1);
-    setSimpsons({ simpsonsCopy });
+    setSimpsons(simpsonsCopy);
   };
 
   //Search box
